@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="img/logo.svg" width="67" height="185" alt="Герб Седоны">
+      </a>
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list site-list">
+          <li class="site-list__item site-list__item--current"><a>Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html">Фото и видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма Отзыва</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+        </ul>
+        <button class="main-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </nav>
+      <p class="main-header__promo--extended"><span class="visually-hidden">Welcome to the gorgeous Sedona (<q>Because the Grand Canyon sucks!</q>)</span></p>
+    </header>
+
+    <main>
+      <!-- <h1 class="">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1> -->
+      <h1 class="visually-hidden">Главная страница сайта о Седоне</h1>
+      <section class="features">
+        <!-- <h2 class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2> -->
+        <h2 class="visually-hidden">Преимущества Седоны перед Гранд Каньоном</h2>
+        <section class="features__intro text-block">
+          <h3 class="features__intro-title text-block__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p class="features__intro-text text-block__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </section>
+        <ul class="features__list">
+          <li class="features__item features-item--illustrated text-block">
+            <h3 class="text-block__title">Настоящий городок</h3>
+            <p class="text-block__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </li>
+          <li class="features__item features-item--illustrated features-item--illustrated-left text-block">
+            <h3 class="text-block__title">Там есть Мост Дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </li>
+          <li class="features__item text-block">
+            <h3 class="text-block__title">Небольшая площадь</h3>
+            <p>Все интересные места находятся очень близко</p>
+          </li>
+          <li class="features__item text-block">
+            <h3 class="text-block__title">Красивая дорога</h3>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features__item text-block">
+            <h3 class="text-block__title">Мало туристов</h3>
+            <p class="text-block__description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+        <aside class="features__advice advice">
+          <ul class="advice__list">
+            <li class="advice__item">
+              <h3 class="text-block__title">Жилье</h3>
+              <p class="text-block__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advice__item">
+              <h3 class="text-block__title">Еда</h3>
+              <p class="text-block__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </li>
+            <li class="advice__item">
+              <h3 class="text-block__title">Сувениры</h3>
+              <p class="text-block__description">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </aside>
+      </section>
+      <section class="to-hotels text-block--big">
+        <h2 class="to-hotels__title text-block__title--big">Заинтересовались?</h2>
+        <p class="to-hotels__description text-block__description--big">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <a class="to-hotels__button button" href="#">Найти Гостиницу</a>
+      </section>
+      <section class="map">
+        <img src="img/map-mobile.jpg" alt="Седона находится в штате Аризона, к северу от национального парка Гранд Каньон">
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
 
   </body>
 </html>
