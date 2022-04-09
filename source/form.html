@@ -20,7 +20,7 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--current" href="catalog.html">Фото и видео</a>
+              <a class="site-list__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--current">Форма Отзыва</a>
@@ -44,18 +44,18 @@
 
       <section class="feedback">
 
-        <header class="feedback-intro text-block">
-
-          <div class="container">
-
-            <h1 class="feedback-intro__title text-block__title">Оставьте свой отзыв</h1>
-            <p class="feedback-intro__text text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-
-          </div>
-
-        </header>
-
         <div class="container">
+
+          <header class="feedback-intro text-block">
+
+            <div class="container">
+
+              <h1 class="feedback-intro__title text-block__title">Оставьте свой отзыв</h1>
+              <p class="feedback-intro__text text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
+            </div>
+
+          </header>
 
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 
@@ -175,17 +175,17 @@
 
     </footer>
 
-    <dialog class="feedback-modal feedback-modal--primary" open>
-      <h2 class="feedback-modal__title--primary text-block__title">Что-то пошло не так!</h2>
-      <p class="feedback-modal__text--primary text-block__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="feedback-modal__button--primary button" type="button">OК</button>
+    <dialog class="feedback-modal feedback-modal-error text-block" open>
+      <h2 class="feedback-modal-error__title text-block__title">Что-то пошло не так!</h2>
+      <p class="feedback-modal-error__text text-block__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="feedback-modal-error__button button" type="button">OК</button>
     </dialog>
 
-    <dialog class="feedback-modal feedback-modal--secondary">
-      <h2 class="feedback-modal__title--secondary text-block__title">Ваш отзыв отправлен!</h2>
-      <p class="feedback-modal__text--secondary text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <div class="feedback-modal__button-container--secondary">
-        <button class="feedback-modal__button--secondary button" type="button">Закрыть окно</button>
+    <dialog class="feedback-modal feedback-modal-ok text-block">
+      <h2 class="feedback-modal-ok__title text-block__title">Ваш отзыв отправлен!</h2>
+      <p class="feedback-modal-ok__text text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="feedback-modal-ok__button-container">
+        <button class="feedback-modal-ok__button button" type="button">Закрыть окно</button>
       </div>
     </dialog>
 
