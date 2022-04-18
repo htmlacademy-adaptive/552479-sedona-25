@@ -1,0 +1,30 @@
+.main-footer {
+  padding: 38px 0 23px;
+
+  background-color: var(--color-primary);
+}
+
+.main-footer__tag {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 124%;
+  color: var(--color-text-primary);
+}
+
+.main-footer__copywrite-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: none;
+  color: var(--color-copyright-normal);
+
+  &:hover {
+    color: var(--color-copyright-hover);
+  }
+
+  &:active {
+    color: var(--color-copyright-down);
+  }
+}

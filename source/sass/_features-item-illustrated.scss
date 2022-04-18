@@ -1,0 +1,16 @@
+.features-item-illustrated {
+  background-color: var(--color-secondary);
+}
+
+.features-item-illustrated__text {
+  padding: 39px 0 35px;
+}
+
+.features__item:nth-child(1) .features-item-illustrated__text {
+  padding: 33px 0 40px;
+}
+
+.features-item-illustrated__title,
+.features-item-illustrated__description {
+  color: var(--color-primary);
+}

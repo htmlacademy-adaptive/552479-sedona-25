@@ -1,0 +1,26 @@
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 124%;
+  text-decoration: none;
+  color: var(--color-primary);
+
+  background-color: var(--color-button-background-normal);
+  border: 0;
+
+  &:hover {
+    background-color: var(--color-button-background-hover);
+  }
+
+  &:active {
+    color: var(--color-button-text-active);
+
+    background-color: var(--color-button-background-active);
+  }
+
+  &:disabled {
+    background-color: var(--color-button-background-disabled);
+  }
+}

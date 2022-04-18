@@ -1,0 +1,17 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-list__link {
+  background-color: var(--color-button-background-normal);
+
+  &:hover {
+    background-color: var(--color-button-background-hover);
+  }
+
+  &:active {
+    background-color: var(--color-button-background-active);
+  }
+}

@@ -1,0 +1,27 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__link {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  text-decoration: none;
+  color: var(--color-primary);
+
+  background-color: var(--color-secondary);
+
+  &:hover {
+    background-color: var(--color-button-background-hover);
+  }
+
+  &:active {
+    color: var(--color-button-text-active);
+
+    background-color: var(--color-button-background-active);
+  }
+}

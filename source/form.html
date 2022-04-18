@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
 
@@ -46,12 +48,12 @@
 
         <div class="container">
 
-          <header class="feedback-intro text-block">
+          <header class="feedback__intro text-block">
 
             <div class="container">
 
-              <h1 class="feedback-intro__title text-block__title">Оставьте свой отзыв</h1>
-              <p class="feedback-intro__text text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+              <h1 class="feedback__intro-title text-block__title">Оставьте свой отзыв</h1>
+              <p class="feedback__intro-text text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
             </div>
 
@@ -132,7 +134,7 @@
 
             <fieldset class="feedback-form__group feedback-form__group--details">
               <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
-              <textarea name="feedback-form-details" id="feedback-form-details" cols="30" rows="3" placeholder="Опишите подробно все свои восторги "></textarea>
+              <textarea class="feedback-form__textarea textarea" name="feedback-form-details" id="feedback-form-details" cols="30" rows="3" placeholder="Опишите подробно все свои восторги "></textarea>
             </fieldset>
 
             <div class="feedback-form__submit-container">
@@ -167,7 +169,7 @@
         </ul>
 
         <div class="main-footer__inner main-footer__copywrite">
-          <a href="https://htmlacademy.ru/">Разработано <span class="visually-hidden">HTML Academy</span>
+          <a class="main-footer__copywrite-link"  href="https://htmlacademy.ru/">Разработано <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
 
@@ -175,19 +177,21 @@
 
     </footer>
 
-    <dialog class="feedback-modal feedback-modal-error text-block" open>
+    <div class="feedback-modal feedback-modal-error text-block">
       <h2 class="feedback-modal-error__title text-block__title">Что-то пошло не так!</h2>
       <p class="feedback-modal-error__text text-block__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="feedback-modal-error__button button" type="button">OК</button>
-    </dialog>
+    </div>
 
-    <dialog class="feedback-modal feedback-modal-ok text-block">
-      <h2 class="feedback-modal-ok__title text-block__title">Ваш отзыв отправлен!</h2>
-      <p class="feedback-modal-ok__text text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <div class="feedback-modal feedback-modal-ok text-block">
+      <div class="feedback-modal-ok__text-container">
+        <h2 class="feedback-modal-ok__title text-block__title">Ваш отзыв отправлен!</h2>
+        <p class="feedback-modal-ok__text text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
       <div class="feedback-modal-ok__button-container">
         <button class="feedback-modal-ok__button button" type="button">Закрыть окно</button>
       </div>
-    </dialog>
+    </div>
 
   </body>
 </html>
