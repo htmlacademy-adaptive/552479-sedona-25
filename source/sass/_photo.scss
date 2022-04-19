@@ -1,0 +1,29 @@
+.photo {
+  outline: 1px dashed #006400;
+  padding: 24px 0 25px;
+}
+
+.photo__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-text-primary);
+}
+
+.photo__author {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: none;
+  color: var(--color-text-secondary);
+}
+
+.photo__like-stats {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-text-primary);
+}

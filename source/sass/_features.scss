@@ -1,0 +1,17 @@
+.features__intro,
+.features__item,
+.promo {
+  outline: 1px dashed #006400;
+}
+
+.features__intro {
+  padding-top: 32px;
+  padding-bottom: 53px;
+  background-color: var(--color-primary);
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
