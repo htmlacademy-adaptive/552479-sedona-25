@@ -21,10 +21,11 @@
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "item1 item1 item1"
-                         "item6 item7 item8"
-                         "item2 item2 item2"
-                         "item3 item4 item5";
+    grid-template-areas:
+      "item1 item1 item1"
+      "item6 item7 item8"
+      "item2 item2 item2"
+      "item3 item4 item5";
   }
 }
 
@@ -35,9 +36,6 @@
 
   &:nth-child(2) {
     grid-area: item2;
-
-    @media (min-width: 768px) {
-    }
   }
 
   &:nth-child(3) {
