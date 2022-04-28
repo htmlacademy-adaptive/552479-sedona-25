@@ -1,3 +1,14 @@
 .main-nav {
-  display: block; //чтобы stylelint не выдавал Unexpected empty source
+  min-height: 56px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 3;
+  top: 9px;
+  right: 12px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
