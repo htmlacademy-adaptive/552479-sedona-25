@@ -2,13 +2,64 @@
   background-color: var(--color-primary);
 }
 
+.photos-catalog__container {
+  margin: 0 20px;
+
+  @media (min-width: 768px) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
 .photos-catalog__intro {
   outline: 1px dashed #006400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 33px 0 40px;
+
+  @media (min-width: 768px) {
+    padding: 62px 0 83px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 100px 0 85px;
+  }
 }
 
 .photos-catalog__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  // @media (min-width: 1200px) {
+
+  // }
+}
+
+.photos-catalog__item {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 33.33%;
+  }
+
+  &--accent {
+    width: 100%;
+  }
 }
