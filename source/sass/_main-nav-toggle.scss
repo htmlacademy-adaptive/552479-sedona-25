@@ -1,4 +1,40 @@
 .main-nav-toggle {
+  width: 39px;
+  height: 38px;
   background-color: transparent;
   border: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    width: 23px;
+    height: 4px;
+    background-color: var(--color-mobile-humburger-normal);
+    box-shadow: 0 9px 0 0 var(--color-mobile-humburger-normal);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+
+    width: 23px;
+    height: 4px;
+    background-color: var(--color-mobile-humburger-normal);
+  }
+
+  &--open::before {
+    background-color: var(--color-mobile-x-normal);
+    box-shadow: none;
+    transform: translate(0, 9px) rotate(45deg);
+  }
+
+  &--open::after {
+    background-color: var(--color-mobile-x-normal);
+    transform: translate(0, -9px) rotate(-45deg);
+  }
 }
