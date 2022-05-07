@@ -2,30 +2,29 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "fullname fullname"
-  "contacts contacts"
-  "grade grade"
-  "sights sights"
-  "details details"
-  "submit submit"
-  "footnote footnote";
-
-  @media (min-width: 768px) {
-    grid-template-areas:
-    "fullname contacts"
+    "fullname fullname"
+    "contacts contacts"
     "grade grade"
     "sights sights"
     "details details"
-    "submit footnote";
+    "submit submit"
+    "footnote footnote";
+
+  @media (min-width: 768px) {
+    grid-template-areas:
+      "fullname contacts"
+      "grade grade"
+      "sights sights"
+      "details details"
+      "submit footnote";
   }
-//
+  //
   // @media (min-width: 1200px) {
 
   // }
 }
 
 .feedback-form__group {
-
   &--fullname {
     grid-area: fullname;
   }
