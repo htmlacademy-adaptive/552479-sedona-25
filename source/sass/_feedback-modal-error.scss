@@ -1,4 +1,15 @@
 .feedback-modal-error {
   outline: 1px dashed #006400;
-  padding: 45px 42px 35px;
+  box-sizing: border-box;
+  padding: 0 42px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.feedback-modal-error__title {
+  margin-top: 45px;
+}
+
+.feedback-modal-error__button {
+  margin: 28px 0 35px;
 }

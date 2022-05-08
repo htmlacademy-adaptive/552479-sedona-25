@@ -2,9 +2,37 @@
   background-color: var(--color-primary);
 }
 
+.feedback__container {
+  margin: 0 20px;
+
+  @media (min-width: 768px) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 120px;
+  }
+}
+
 .feedback__intro {
   outline: 1px dashed #006400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 36px 0 28px;
+
+  @media (min-width: 768px) {
+    padding: 64px 0 102px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 115px 0 67px;
+  }
+}
+
+.feedback__intro-container {
+  width: 100%;
+  max-width: 435px;
 }
 
 .feedback-form__group {

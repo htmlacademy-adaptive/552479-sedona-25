@@ -10,9 +10,9 @@
 
     <header class="main-header">
 
-      <div class="container">
+      <div class="main-header__container">
 
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
           <img src="img/logo.svg" width="185" height="96" alt="Герб Седоны.">
         </a>
 
@@ -46,11 +46,11 @@
 
       <section class="feedback">
 
-        <div class="container">
+        <div class="feedback__container">
 
           <header class="feedback__intro text-block">
 
-            <div class="container">
+            <div class="feedback__intro-container">
 
               <h1 class="feedback__intro-title text-block__title">Оставьте свой отзыв</h1>
               <p class="feedback__intro-text text-block__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -65,11 +65,11 @@
               <legend class="feedback-form__legend">Представьтесь:</legend>
               <label class="feedback-form__text-field text-field">
                 <span class="text-field__label">Имя*:</span>
-                <input class="text-field__input" type="text" name="feedback-form-name" id="feedback-form-name" placeholder="Введите имя" value="Пётр">
+                <input class="text-field__input" type="text" name="feedback-form-name" id="feedback-form-name" placeholder="Введите имя" value="Пётр" required>
               </label>
               <label class="feedback-form__text-field text-field">
                 <span class="text-field__label">Фамилия*:</span>
-                <input class="text-field__input" type="text" name="feedback-form-surname" id="feedback-form-surname" placeholder="Введите фамилию" value="Пустота">
+                <input class="text-field__input" type="text" name="feedback-form-surname" id="feedback-form-surname" placeholder="Введите фамилию" value="Пустота" required>
               </label>
               <label class="feedback-form__text-field text-field">
                 <span class="text-field__label">Отчество:</span>
@@ -81,11 +81,11 @@
               <legend class="feedback-form__legend">Контактная информация:</legend>
               <label class="feedback-form__text-field text-field">
                 <span class="text-field__label">Контактный телефон*:</span>
-                <input class="text-field__input text-field__input--illustrated" type="tel" name="feedback-form-phone" id="feedback-form-phone" placeholder="Введите телефон">
+                <input class="text-field__input text-field__input--illustrated" type="tel" name="feedback-form-phone" id="feedback-form-phone" placeholder="Введите телефон" required>
               </label>
               <label class="feedback-form__text-field text-field">
                 <span class="text-field__label">Электронная почта*:</span>
-                <input class="text-field__input text-field__input--illustrated" type="email" name="feedback-form-email" id="feedback-form-email" placeholder="Введите e-mail">
+                <input class="text-field__input text-field__input--illustrated" type="email" name="feedback-form-email" id="feedback-form-email" placeholder="Введите e-mail" required>
               </label>
             </fieldset>
 
@@ -137,9 +137,12 @@
               <textarea class="feedback-form__textarea textarea" name="feedback-form-details" id="feedback-form-details" cols="30" rows="3" placeholder="Опишите подробно все свои восторги "></textarea>
             </fieldset>
 
+            <div class="feedback-form__footnote-container">
+              <span class="feedback-form__footnote">* — обязательные поля</span>
+            </div>
+
             <div class="feedback-form__submit-container">
               <button class="feedback-form__submit-button button" type="submit">Отправить отзыв</button>
-              <span class="feedback-form__footnote">* — обязательные поля</span>
             </div>
 
           </form>

@@ -1,4 +1,44 @@
 .presentation {
   outline: 1px dashed #006400;
   padding: 17px 0 0;
+
+  @media (min-width: 768px) {
+    padding: 58px 0 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 62px 0 84px;
+  }
+}
+
+.presentation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+
+  @media (min-width: 768px) {
+    margin: 0 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 200px;
+  }
+}
+
+.presentation__text-block {
+  // width: 100%;
+  max-width: 445px;
+}
+
+.presentation__video {
+  width: 100%;
+  max-width: 800px;
+}
+
+.presentation__video video {
+  width: 100%;
+  // max-width: 800px;
+  height: auto;
+  vertical-align: middle;
 }

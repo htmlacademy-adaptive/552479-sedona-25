@@ -1,4 +1,7 @@
 .text-field__label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

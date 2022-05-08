@@ -1,5 +1,8 @@
 .feedback-modal-ok {
   outline: 1px dashed #006400;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
 }
 
 .feedback-modal-ok__text-container {
@@ -7,5 +10,7 @@
 }
 
 .feedback-modal-ok__button-container {
+  width: 100%;
+
   background-color: var(--color-input-background-normal);
 }
