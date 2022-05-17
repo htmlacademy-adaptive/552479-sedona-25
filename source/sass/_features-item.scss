@@ -1,5 +1,41 @@
 .features-item {
   padding: 25px 0 25px;
+  text-align: center;
 
   background-color: var(--color-features-item-background);
+
+  @media (min-width: 768px) {
+    padding: 42px 0 62px;
+  }
+}
+
+.features-item:not(:nth-last-of-type(4)) {
+  border-bottom: 1px solid var(--color-features-item-border);
+
+  @media (min-width: 768px) {
+    border: 0;
+  }
+}
+
+.features-item__title {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 120px;
+  }
+}
+
+.features-item__description {
+  width: 100%;
+  max-width: 247px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 160px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 315px;
+  }
 }

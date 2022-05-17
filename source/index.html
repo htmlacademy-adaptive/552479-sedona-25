@@ -12,26 +12,26 @@
 
       <div class="main-header__container">
 
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="./index.html">
           <img src="img/logo.svg" width="185" height="96" alt="Герб Седоны.">
         </a>
 
-        <nav class="main-header__nav main-nav main-nav">
-          <ul class="main-nav__site-list site-list">
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__site-list site-list site-list--nojs">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--current">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Фото и видео</a>
+              <a class="site-list__link" href="./catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма Отзыва</a>
+              <a class="site-list__link" href="./form.html">Форма Отзыва</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle main-nav-toggle main-nav-toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle main-nav-toggle main-nav-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </nav>
 
         <div class="main-header__poster main-header__poster--extended">
@@ -48,18 +48,18 @@
 
       <section class="features">
 
-        <div>
-
-          <header class="features__intro text-block container">
+        <div class="features__intro-container">
+          <header class="features__intro text-block">
             <h2 class="features__intro-title text-block__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p class="features__intro-text text-block__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </header>
+        </div>
 
           <ul class="features__list">
             <li class="features__item features__item--illustrated features-item-illustrated">
               <div class="features-item-illustrated__container">
                 <div class="features-item-illustrated__text text-block">
-                  <h3 class="features-item-illustrated__title text-block__title">Настоящий городок</h3>
+                  <h3 class="features-item-illustrated__title features-item-title-iterated text-block__title">Настоящий городок</h3>
                   <p class="features-item-illustrated__description text-block__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="features-item-illustrated__image">
@@ -70,7 +70,7 @@
             <li class="features__item features__item--illustrated features-item-illustrated features-item-illustrated--left">
               <div class="features-item-illustrated__container">
                 <div class="features-item-illustrated__text text-block">
-                  <h3 class="features-item-illustrated__title text-block__title">Там есть Мост Дьявола</h3>
+                  <h3 class="features-item-illustrated__title features-item-title-iterated text-block__title">Там есть Мост Дьявола</h3>
                   <p class="features-item-illustrated__description text-block__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <div class="features-item-illustrated__image">
@@ -79,41 +79,45 @@
               </div>
             </li>
             <li class="features__item features-item text-block">
-              <h3 class="text-block__title">Небольшая площадь</h3>
-              <p class="text-block__description">Все интересные места находятся очень близко</p>
+              <h3 class="features-item__title features-item-title-iterated text-block__title">Небольшая площадь</h3>
+              <p class="features-item__description text-block__description">Все интересные места находятся очень близко</p>
             </li>
             <li class="features__item features-item text-block">
-              <h3 class="text-block__title">Красивая дорога</h3>
-              <p class="text-block__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="features-item__title features-item-title-iterated text-block__title">Красивая дорога</h3>
+              <p class="features-item__description text-block__description">Ехать в Седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!</p>
             </li>
             <li class="features__item features-item text-block">
-              <h3 class="text-block__title">Мало туристов</h3>
-              <p class="text-block__description">Большинство едет в Гранд Каньон и толпится там</p>
+              <h3 class="features-item__title features-item-title-iterated text-block__title">Мало туристов</h3>
+              <p class="features-item__description text-block__description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="features__item features-item-extra text-block">
-              <h3 class="features-item-extra__title text-block__title">Жилье</h3>
-              <p class="features-item-extra__description text-block__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <div class="features-item-extra__container">
+                <h3 class="features-item-extra__title features-item-extra-title features-item-extra-title__house text-block__title">Жилье</h3>
+                <p class="features-item-extra__description text-block__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
             </li>
             <li class="features__item features-item-extra text-block">
-              <h3 class="features-item-extra__title text-block__title">Еда</h3>
-              <p class="features-item-extra__description text-block__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <div class="features-item-extra__container">
+                <h3 class="features-item-extra__title features-item-extra-title features-item-extra-title__food text-block__title">Еда</h3>
+                <p class="features-item-extra__description text-block__description">Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
+              </div>
             </li>
             <li class="features__item features-item-extra text-block">
-              <h3 class="features-item-extra__title text-block__title">Сувениры</h3>
-              <p class="features-item-extra__description text-block__description">Не только китайского, но и местного производства!</p>
+              <div class="features-item-extra__container">
+                <h3 class="features-item-extra__title features-item-extra-title features-item-extra-title__gift text-block__title">Сувениры</h3>
+                <p class="features-item-extra__description text-block__description">Не только китайского, <br>но и местного производства!</p>
+              </div>
             </li>
           </ul>
-
-        </div>
 
       </section>
 
       <section class="promo text-block">
 
-        <div class="container">
+        <div class="promo__container">
 
           <h2 class="promo__title text-block__title text-block__title--big">Заинтересовались?</h2>
-          <p class="promo__description text-block__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+          <p class="promo__description text-block__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <a class="promo__button button" href="#">Найти Гостиницу</a>
 
         </div>
@@ -125,8 +129,9 @@
         <div class="map__container">
 
           <h2 class="visually-hidden">Седона на карте штата Аризона</h2>
-          <img src="img/map-mobile.jpg" alt="Седона находится севернее национального парка Гранд Каньон и южнее города Финикс.">
-
+          <!-- <img src="img/map-mobile.jpg" alt="Седона находится севернее национального парка Гранд Каньон и южнее города Финикс."> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1673132.1908302668!2d-112.78373627866537!3d35.010802491499895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1652812762259!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
         </div>
 
       </section>
@@ -140,18 +145,34 @@
 
         <ul class="main-footer__inner main-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--vkontakte" href="#">v<span class="visually-hidden">ВКонтакте</span></a>
+            <a class="social-list__link social-list__link--vkontakte" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z" fill="#ffffff"/>
+                </svg>
+            </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--telegram" href="#">t<span class="visually-hidden">Телеграм</span></a>
+            <a class="social-list__link social-list__link--telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4391 4.62225L19.2704 19.566C19.0311 20.6205 18.4079 20.883 17.5221 20.3865L12.6936 16.8285L10.3641 19.0695C10.1061 19.3275 9.8909 19.5428 9.39365 19.5428L9.7409 14.6258L18.6891 6.54C19.0784 6.1935 18.6044 6.00075 18.0846 6.348L7.02215 13.314L2.25965 11.823C1.2239 11.4998 1.20515 10.7873 2.47565 10.29L21.1034 3.11325C21.9659 2.79 22.7204 3.30525 22.4391 4.623V4.62225Z" fill="#ffffff"/>
+                </svg>
+            </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="#">y<span class="visually-hidden">Youtube</span></a>
+            <a class="social-list__link social-list__link--youtube" href="#">
+              <span class="visually-hidden">Youtube</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z" fill="#ffffff"/>
+              </svg>
+            </a>
           </li>
         </ul>
 
         <div class="main-footer__inner main-footer__copywrite">
           <a class="main-footer__copywrite-link" href="https://htmlacademy.ru/">Разработано <span class="visually-hidden">HTML Academy</span>
+            <svg class="main-footer__copywrite-icon" width="36" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
           </a>
         </div>
 
@@ -159,5 +180,6 @@
 
     </footer>
 
+    <script src="./js/script.js"></script>
   </body>
 </html>

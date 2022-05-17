@@ -1,8 +1,10 @@
 .main-nav-toggle {
+  z-index: 40;
   width: 39px;
   height: 38px;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -27,14 +29,48 @@
     background-color: var(--color-mobile-humburger-normal);
   }
 
+  &:hover::before {
+    background-color: var(--color-mobile-humburger-hover);
+    box-shadow: 0 9px 0 0 var(--color-mobile-humburger-hover);
+  }
+
+  &:hover::after{
+    background-color: var(--color-mobile-humburger-hover);
+  }
+
+  &:active::before {
+    background-color: var(--color-mobile-humburger-down);
+    box-shadow: 0 9px 0 0 var(--color-mobile-humburger-down);
+  }
+
+  &:active::after{
+    background-color: var(--color-mobile-humburger-down);
+  }
+
   &--open::before {
+    width: 27px;
     background-color: var(--color-mobile-x-normal);
     box-shadow: none;
-    transform: translate(0, 9px) rotate(45deg);
+    transform: translate(-2px, 9px) rotate(45deg);
   }
 
   &--open::after {
+    width: 27px;
     background-color: var(--color-mobile-x-normal);
-    transform: translate(0, -9px) rotate(-45deg);
+    transform: translate(-2px, -9px) rotate(-45deg);
   }
+
+  &--open:hover::before,
+  &--open:hover::after {
+    background-color: var(--color-mobile-x-hover);
+  }
+
+  &--open:active::before,
+  &--open:active::after {
+    background-color: var(--color-mobile-x-down);
+  }
+}
+
+.main-nav-toggle--nojs {
+  display: none;
 }

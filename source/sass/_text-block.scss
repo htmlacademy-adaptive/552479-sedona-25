@@ -9,9 +9,17 @@
   line-height: 26px;
   color: var(--color-text-primary);
 
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+
   &--big {
     font-size: 21px;
     line-height: 26px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
   }
 }
 
