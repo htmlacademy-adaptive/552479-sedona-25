@@ -8,7 +8,6 @@
 }
 
 .social-list__link {
-  display: block;
   width: 48px;
   height: 48px;
   display: flex;
@@ -26,6 +25,6 @@
   }
 }
 
-.social-list__link:active  svg {
+.social-list__link:active svg {
   opacity: 0.3;
 }

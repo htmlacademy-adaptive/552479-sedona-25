@@ -34,7 +34,7 @@
     box-shadow: 0 9px 0 0 var(--color-mobile-humburger-hover);
   }
 
-  &:hover::after{
+  &:hover::after {
     background-color: var(--color-mobile-humburger-hover);
   }
 
@@ -43,7 +43,7 @@
     box-shadow: 0 9px 0 0 var(--color-mobile-humburger-down);
   }
 
-  &:active::after{
+  &:active::after {
     background-color: var(--color-mobile-humburger-down);
   }
 
