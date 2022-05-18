@@ -2,4 +2,76 @@
   padding: 22px 0 22px;
 
   background-color: var(--color-primary);
+
+  br {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: inline;
+    }
+  }
+}
+
+.features-item-extra__container {
+  margin: 0 18px 0 65px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 158px 0 58px;
+    text-align: center;
+  }
+}
+
+.features-item-extra__description {
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    max-width: 193px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 290px;
+  }
+}
+
+.features-item-extra-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    // display: block;
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+}
+
+.features-item-extra-title::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -47px;
+  background-size: contain;
+
+  @media (min-width: 768px) {
+    top: -102px;
+    width: 76px;
+    height: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.features-item-extra-title__house::before {
+  background-image: url("../img/house.svg");
+}
+
+.features-item-extra-title__food::before {
+  background-image: url("../img/burger.svg");
+}
+
+.features-item-extra-title__gift::before {
+  background-image: url("../img/present.svg");
 }

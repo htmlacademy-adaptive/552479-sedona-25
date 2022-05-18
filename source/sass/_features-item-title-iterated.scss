@@ -1,0 +1,21 @@
+.features-item-title-iterated {
+  position: relative;
+  margin-bottom: 60px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 66px;
+  }
+}
+
+.features-item-title-iterated::after {
+  counter-increment: features;
+  content: "— №" counter(features) " —";
+  position: absolute;
+  bottom: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
