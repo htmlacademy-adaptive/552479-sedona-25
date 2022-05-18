@@ -14,6 +14,12 @@
   }
 
   &--big {
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &--big-secondary {
     font-size: 21px;
     line-height: 26px;
 

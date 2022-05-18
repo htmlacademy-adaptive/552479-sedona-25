@@ -28,7 +28,25 @@
 
 .presentation__text-block {
   // width: 100%;
+  margin-bottom: 38px;
   max-width: 445px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+  }
+}
+
+.presentation__title {
+  margin-bottom: 40px;
+}
+
+.presentation__text {
+  margin: 0 20px;
 }
 
 .presentation__video {
