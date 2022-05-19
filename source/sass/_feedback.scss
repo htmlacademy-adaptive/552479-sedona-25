@@ -3,14 +3,27 @@
 }
 
 .feedback__container {
-  margin: 0 20px;
+  // margin: 0 20px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  // max-width: 648px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: 768px) {
-    margin: 0 60px;
+    // margin: 0 60px;
+    padding: 0 60px;
+    width: 768px;
+    // max-width: 1200px;
   }
 
   @media (min-width: 1200px) {
-    margin: 0 120px;
+    // margin: 0 120px;
+    padding: 0 120px;
+    width: 1200px;
   }
 }
 
