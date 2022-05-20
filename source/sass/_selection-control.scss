@@ -1,3 +1,12 @@
+.selection-control {
+  display: flex;
+  align-items: center;
+
+  &:hover .selection-control__input {
+    background-color: var(--color-input-background-hover);
+  }
+}
+
 .selection-control__label {
   font-style: normal;
   font-weight: 700;
@@ -5,4 +14,59 @@
   line-height: 26px;
   text-transform: none;
   color: var(--color-text-primary);
+}
+
+.selection-control__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  width: 46px;
+  height: 46px;
+
+  background-color: var(--color-input-background-normal);
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &----checkbox {
+    border-radius: 4px;
+  }
+}
+
+.selection-control__radio:checked ~ .selection-control__input {
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+
+    background-color: var(--color-input-check);
+    border-radius: 50%;
+  }
+}
+
+.selection-control__checkbox:checked ~ .selection-control__input {
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/check-darkgrey.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.selection-control__radio:disabled ~ .selection-control__input,
+.selection-control__checkbox:disabled ~ .selection-control__input {
+  background-color: var(--color-input-background-disabled);
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.selection-control__radio:focus ~ .selection-control__input,
+.selection-control__checkbox:focus ~ .selection-control__input {
+  outline: 2px solid var(--color-input-check);
 }

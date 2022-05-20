@@ -79,30 +79,30 @@
 
             <fieldset class="feedback-form__group feedback-form__group--contacts">
               <legend class="feedback-form__legend">Контактная информация:</legend>
-              <label class="feedback-form__text-field text-field">
+              <label class="feedback-form__text-field feedback-form__text-field--contacts text-field">
                 <span class="text-field__label">Контактный телефон*:</span>
-                <input class="text-field__input text-field__input--illustrated" type="tel" name="feedback-form-phone" id="feedback-form-phone" placeholder="Введите телефон" required>
+                <input class="text-field__input text-field__input--phone" type="tel" name="feedback-form-phone" id="feedback-form-phone" placeholder="Введите телефон" required>
               </label>
-              <label class="feedback-form__text-field text-field">
+              <label class="feedback-form__text-field feedback-form__text-field--contacts text-field">
                 <span class="text-field__label">Электронная почта*:</span>
-                <input class="text-field__input text-field__input--illustrated" type="email" name="feedback-form-email" id="feedback-form-email" placeholder="Введите e-mail" required>
+                <input class="text-field__input text-field__input--email" type="email" name="feedback-form-email" id="feedback-form-email" placeholder="Введите e-mail" required>
               </label>
             </fieldset>
 
             <fieldset class="feedback-form__group feedback-form__group--grade">
               <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
-              <label class="feedback-form__selection-control selection-control">
-                <input class="visually-hidden" type="radio" name="feedback-form-grade" id="feedback-form-grade-positive" value="positive" checked>
+              <label class="feedback-form__selection-control selection-control" for="feedback-form-grade-positive">
+                <input class="selection-control__radio visually-hidden" type="radio" name="feedback-form-grade" id="feedback-form-grade-positive" value="positive" checked>
                 <span class="selection-control__input selection-control__input--radio"></span>
                 <span class="selection-control__label">Скорее положительное</span>
               </label>
-              <label class="feedback-form__selection-control selection-control">
-                <input class="visually-hidden" type="radio" name="feedback-form-grade" id="feedback-form-grade-negative" value="negative">
+              <label class="feedback-form__selection-control selection-control" for="feedback-form-grade-negative">
+                <input class="selection-control__radio visually-hidden" type="radio" name="feedback-form-grade" id="feedback-form-grade-negative" value="negative">
                 <span class="selection-control__input selection-control__input--radio"></span>
                 <span class="selection-control__label">Скорее отрицательное</span>
               </label>
-              <label class="feedback-form__selection-control selection-control">
-                <input class="visually-hidden" type="radio" name="feedback-form-grade" id="feedback-form-grade-undecided" value="undecided">
+              <label class="feedback-form__selection-control selection-control" for="feedback-form-grade-undecided">
+                <input class="selection-control__radio visually-hidden" type="radio" name="feedback-form-grade" id="feedback-form-grade-undecided" value="undecided">
                 <span class="selection-control__input selection-control__input--radio"></span>
                 <span class="selection-control__label">Затрудняюсь ответить</span>
               </label>
@@ -111,22 +111,22 @@
             <fieldset class="feedback-form__group feedback-form__group--sights">
               <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
               <label class="feedback-form__selection-control selection-control">
-                <input class="visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-devils-bridge" value="devils-bridge" checked>
+                <input class="selection-control__checkbox visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-devils-bridge" value="devils-bridge" checked>
                 <span class="selection-control__input selection-control__input--checkbox"></span>
                 <span class="selection-control__label">Мост Дьявола</span>
               </label>
               <label class="feedback-form__selection-control selection-control">
-                <input class="visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-bell-rock" value="bell-rock" checked>
+                <input class="selection-control__checkbox visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-bell-rock" value="bell-rock" checked>
                 <span class="selection-control__input selection-control__input--checkbox"></span>
                 <span class="selection-control__label">Гора-Колокол</span>
               </label>
               <label class="feedback-form__selection-control selection-control">
-                <input class="visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-slide-park" value="slide-park" checked>
+                <input class="selection-control__checkbox visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-slide-park" value="slide-park" checked>
                 <span class="selection-control__input selection-control__input--checkbox"></span>
                 <span class="selection-control__label">Слайд-парк</span>
               </label>
               <label class="feedback-form__selection-control selection-control">
-                <input class="visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-red-rock" value="red-rock">
+                <input class="selection-control__checkbox visually-hidden" type="checkbox" name="feedback-form-sights" id="feedback-form-sights-red-rock" value="red-rock">
                 <span class="selection-control__input selection-control__input--checkbox"></span>
                 <span class="selection-control__label">Красные скалы</span>
               </label>
@@ -205,7 +205,7 @@
     <div class="feedback-modal feedback-modal-ok text-block">
       <div class="feedback-modal-ok__text-container">
         <h2 class="feedback-modal-ok__title text-block__title text-block__title--big">Ваш отзыв отправлен!</h2>
-        <p class="feedback-modal-ok__text text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="feedback-modal-ok__text text-block__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте.</p>
       </div>
       <div class="feedback-modal-ok__button-container">
         <button class="feedback-modal-ok__button button" type="button">Закрыть окно</button>

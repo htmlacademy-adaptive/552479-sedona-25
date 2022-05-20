@@ -1,15 +1,27 @@
 .feedback-modal-error {
   outline: 1px dashed #006400;
   box-sizing: border-box;
-  padding: 0 42px 0;
+  padding: 45px 42px 35px;
   width: 100%;
-  max-width: 400px;
+  max-width: 320px;
+
+  @media (min-width: 768px) {
+    max-width: 400px;
+    padding: 50px 46px;
+  }
 }
 
 .feedback-modal-error__title {
-  margin-top: 45px;
+  // margin-top: 45px;
+  margin-bottom: 38px;
 }
 
 .feedback-modal-error__button {
-  margin: 28px 0 35px;
+  margin-top: 28px;
+  padding: 18px 64px 14px;
+
+  @media (min-width: 768px) {
+    margin-top: 43px;
+    padding: 18px 140px 14px;
+  }
 }
