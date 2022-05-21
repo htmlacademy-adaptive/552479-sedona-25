@@ -1,5 +1,5 @@
 .photo {
-  outline: 1px dashed #006400;
+  // outline: 1px dashed #006400;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,7 @@
 }
 
 .photo__info {
+  // box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,7 +21,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 22px 0 15px;
 
     background-color: var(--color-photo-info-background-secondary);
@@ -34,6 +35,12 @@
     color: var(--color-primary);
 
     background-color: var(--color-photo-info-background);
+  }
+}
+
+.photo__meta {
+  @media (min-width: 768px) {
+    margin-left: 20px;
   }
 }
 
@@ -65,6 +72,25 @@
 
   @media (min-width: 1200px) {
     color: var(--color-primary);
+  }
+}
+
+.photo__likes {
+  margin-top: 6px;
+  display: flex;
+  align-items: flex-end;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    margin-right: 20px;
+  }
+}
+
+.photo__like-button {
+  margin-right: 9px;
+
+  @media (min-width: 768px) {
+    margin-right: 4px;
   }
 }
 
