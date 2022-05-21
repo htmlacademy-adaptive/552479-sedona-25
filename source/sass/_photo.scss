@@ -106,26 +106,34 @@
   }
 }
 
-.photo__image {
+.photo__image-container {
   order: -1;
 }
 
-.photo__image img {
-  width: 100%;
-  max-height: 280px; // временные стили, пока картинки не вставлены нормально
+.photo__image {
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
 
   @media (min-width: 768px) {
-    max-height: 267px;
+    width: 324px;
+    height: 267px;
   }
 
   @media (min-width: 1200px) {
-    max-height: 280px;
+    width: 400px;
+    height: 267px;
   }
 }
 
-.photos-catalog__item--accent .photo__image img { // временные стили, пока картинки не вставлены нормально
+.photos-catalog__item--accent .photo__image {
   @media (min-width: 768px) {
-    max-height: 400px;
+    width: 648px;
+    height: 400px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    height: 400px;
   }
 }

@@ -5,6 +5,9 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./img/favicon-32x32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/apple-icon-180x180.png">
   </head>
   <body class="page__body">
 
@@ -35,7 +38,7 @@
         </nav>
 
         <div class="main-header__poster">
-          <img src="img/header-poster-mobile.jpg" width="320" height="158" alt="Sedona.">
+          <img src="./img/text-sedona.svg" width="229" height="39" alt="Sedona.">
         </div>
 
       </div>
@@ -56,75 +59,99 @@
           <ul class="photos-catalog__list">
 
             <li class="photos-catalog__item photos-catalog__item--accent">
-              <article class="photos-catalog__photo photo photo--accent">
-                <div class="photo__info">
-                  <div class="photo__meta">
-                    <h2 class="photo__title">Неродные просторы</h2>
-                    <p class="photo__author">Автор фото: Борис</p>
+              <a class="photos-catalog__item-link" href="./img/photo-1-desktop@2x.jpg">
+                <article class="photos-catalog__photo photo photo--accent">
+                  <div class="photo__info">
+                    <div class="photo__meta">
+                      <h2 class="photo__title">Неродные просторы</h2>
+                      <p class="photo__author">Автор фото: Борис</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-stats">1350</span>
+                    </div>
                   </div>
-                  <div class="photo__likes">
-                    <button class="photo__like-button like-button" type="button"></button>
-                    <span class="photo__like-stats">1350</span>
+                  <div class="photo__image-container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                      <img class="photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Уходящая дорога на фоне гор на закате или рассвете">
+                    </picture>
                   </div>
-                </div>
-                <div class="photo__image">
-                  <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Уходящая дорога на фоне гор на закате или рассвете">
-                </div>
-              </article>
+                </article>
+              </a>
             </li>
 
             <li class="photos-catalog__item">
-              <article class="photos-catalog__photo photo">
-                <div class="photo__info">
-                  <div class="photo__meta">
-                    <h2 class="photo__title">Местная растительность</h2>
-                    <p class="photo__author">Автор фото: Сергей</p>
+              <a class="photos-catalog__item-link" href="./img/photo-2-desktop@2x.jpg">
+                <article class="photos-catalog__photo photo">
+                  <div class="photo__info">
+                    <div class="photo__meta">
+                      <h2 class="photo__title">Местная растительность</h2>
+                      <p class="photo__author">Автор фото: Сергей</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-stats">143</span>
+                    </div>
                   </div>
-                  <div class="photo__likes">
-                    <button class="photo__like-button like-button" type="button"></button>
-                    <span class="photo__like-stats">143</span>
+                  <div class="photo__image-container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                      <img class="photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Цветущий суккулент на фоне красных скал">
+                    </picture>
                   </div>
-                </div>
-                <div class="photo__image">
-                  <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Цветущий суккулент на фоне красных скал">
-                </div>
-              </article>
+                </article>
+              </a>
             </li>
 
             <li class="photos-catalog__item">
-              <article class="photos-catalog__photo photo">
-                <div class="photo__info">
-                  <div class="photo__meta">
-                    <h2 class="photo__title">Дорога на север</h2>
-                    <p class="photo__author">Автор фото: Петр</p>
+              <a class="photos-catalog__item-link" href="./img/photo-3-desktop@2x.jpg">
+                <article class="photos-catalog__photo photo">
+                  <div class="photo__info">
+                    <div class="photo__meta">
+                      <h2 class="photo__title">Дорога на север</h2>
+                      <p class="photo__author">Автор фото: Петр</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-stats">96</span>
+                    </div>
                   </div>
-                  <div class="photo__likes">
-                    <button class="photo__like-button like-button" type="button"></button>
-                    <span class="photo__like-stats">96</span>
+                  <div class="photo__image-container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                      <img class="photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога-серпантин в поросших лесом горах">
+                    </picture>
                   </div>
-                </div>
-                <div class="photo__image">
-                  <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога-серпантин в поросших лесом горах">
-                </div>
-              </article>
+                </article>
+              </a>
             </li>
 
             <li class="photos-catalog__item">
-              <article class="photos-catalog__photo photo">
-                <div class="photo__info">
-                  <div class="photo__meta">
-                    <h2 class="photo__title">Мост дьявола</h2>
-                    <p class="photo__author">Автор фото: Антон</p>
+              <a class="photos-catalog__item-link" href="./img/photo-4-desktop@2x.jpg">
+                <article class="photos-catalog__photo photo">
+                  <div class="photo__info">
+                    <div class="photo__meta">
+                      <h2 class="photo__title">Мост дьявола</h2>
+                      <p class="photo__author">Автор фото: Антон</p>
+                    </div>
+                    <div class="photo__likes">
+                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-stats">254</span>
+                    </div>
                   </div>
-                  <div class="photo__likes">
-                    <button class="photo__like-button like-button" type="button"></button>
-                    <span class="photo__like-stats">254</span>
+                  <div class="photo__image-container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                      <img class="photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Скала-арка Мост Дьявола">
+                    </picture>
                   </div>
-                </div>
-                <div class="photo__image">
-                  <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Скала-арка Мост Дьявола">
-                </div>
-              </article>
+                </article>
+              </a>
             </li>
 
           </ul>
@@ -141,8 +168,9 @@
             <h2 class="presentation__title text-block__title text-block__title--big">Все еще сомневаетесь?</h2>
             <p class="presentation__text text-block__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <div class="presentation__video">
-            <video width="280" height="177" poster="img/video-mobile.jpg"></video>
+          <div class="presentation__video-container">
+            <video class="presentation__video" width="280" height="177" poster="img/video-desktop.jpg" preload="metadata"></video>
+            <button class="presentation__video-button" type="button"><span class="visually-hidden">Смотреть видео</span></button>
           </div>
 
         </div>
