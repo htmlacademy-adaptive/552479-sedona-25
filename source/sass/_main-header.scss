@@ -1,6 +1,6 @@
 .main-header {
   background-color: var(--color-primary);
-  outline: 1px dashed #0000ff;
+  // outline: 1px dashed #0000ff;
 }
 
 .main-header__container {
@@ -10,6 +10,30 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 600px;
+    height: 57px;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-color: var(--color-primary);
+  }
+
+  &::before {
+    bottom: 0;
+    right: 50%;
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  }
+
+  &::after {
+    bottom: 0;
+    left: 50%;
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+  }
 }
 
 .main-header__logo {
@@ -36,35 +60,109 @@
 //   grid-row: 2 / 3;
 // }
 
-.main-header__logo,
-.main-header__nav,
-.main-header__poster {
-  outline: 1px dashed #006400;
-}
+// .main-header__logo,
+// .main-header__nav,
+// .main-header__poster {
+//   outline: 1px dashed #006400;
+// }
 
 .main-header__poster {
   width: 100%;
+  height: 158px;
 
-  & img { // временные стили, пока картинки не вставлены нормально
-    width: 100%;
-    max-height: 158px;
-    object-fit: cover;
-    // clip-path: polygon(0% 0%, 100% 0%, 100% 91%, 50% 100%, 0% 91%);
+  background-color: var(--color-header-background);
+  background-image: url("../img/header-back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
 
-    @media (min-width: 768px) {
-      max-height: 290px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-back-mobile@2x.jpg");
+    background-size: auto 100%;
+  }
+
+  @media (min-width: 768px) {
+    height: 290px;
+
+    background-image: url("../img/header-back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-back-desktop@2x.jpg");
+      background-size: auto 100%;
     }
+  }
 
-    @media (min-width: 1200px) {
-      max-height: 300px;
+  @media (min-width: 1200px) {
+    height: 300px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 350px;
+    height: 57px;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-color: var(--color-primary);
+  }
+
+  &::before {
+    bottom: 0;
+    right: 50%;
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  }
+
+  &::after {
+    bottom: 0;
+    left: 50%;
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+  }
+}
+
+.main-header__poster img {
+  display: block;
+  width: 229px;
+  height: auto;
+  margin: 52px auto auto;
+
+  @media (min-width: 768px) {
+    width: 457px;
+    margin-top: 95px;
+  }
+
+  @media (min-width: 1200px) {
+    // max-height: 300px;
+    margin-top: 101px;
+  }
+}
+
+.main-header__poster--extended {
+  width: 100%;
+  height: 389px;
+
+  background-image: url("../img/header-back-index-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-back-index-mobile@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    height: 518px;
+
+    background-image: url("../img/header-back-index-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-back-index-desktop@2x.jpg");
     }
   }
 }
 
-.main-header__poster--extended img { // временные стили, пока картинки не вставлены нормально
-  max-height: 389px;
+.main-header__poster--extended img {
+  width: 282px;
+  margin-top: 90px;
 
   @media (min-width: 768px) {
-    max-height: 518px;
+    width: 460px;
+    margin-top: 77px;
   }
 }
