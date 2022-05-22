@@ -5,6 +5,10 @@
   background-color: var(--color-features-item-background);
 
   @media (min-width: 768px) {
+    padding: 42px 0 41px;
+  }
+
+  @media (min-width: 1200px) {
     padding: 42px 0 62px;
   }
 }
@@ -32,7 +36,7 @@
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    max-width: 160px;
+    max-width: 180px;
   }
 
   @media (min-width: 1200px) {

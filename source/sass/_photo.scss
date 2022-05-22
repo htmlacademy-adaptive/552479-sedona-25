@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  padding: 15px 0 25px;
+  padding: 16px 0 25px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -77,12 +77,14 @@
 
 .photo__likes {
   margin-top: 6px;
+  margin-left: -3px;
   display: flex;
   align-items: flex-end;
 
   @media (min-width: 768px) {
     margin-top: 0;
     margin-right: 20px;
+    margin-left: 0;
   }
 }
 

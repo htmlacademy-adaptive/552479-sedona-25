@@ -1,9 +1,9 @@
 .features-item-title-iterated {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
 
   @media (min-width: 768px) {
-    margin-bottom: 66px;
+    margin-bottom: 58px;
   }
 }
 
@@ -11,11 +11,15 @@
   counter-increment: features;
   content: "— №" counter(features) " —";
   position: absolute;
-  bottom: -42px;
+  bottom: -32px;
   left: 50%;
   transform: translateX(-50%);
 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    bottom: -36px;
+  }
 }
