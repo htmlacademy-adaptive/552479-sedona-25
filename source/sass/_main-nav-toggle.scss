@@ -6,69 +6,86 @@
   border: 0;
   cursor: pointer;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 8px;
+  background-image: url("../img/menu-burger.svg");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    width: 23px;
-    height: 4px;
-    background-color: var(--color-mobile-humburger-normal);
-    box-shadow: 0 9px 0 0 var(--color-mobile-humburger-normal);
+  &:hover {
+    opacity: 0.6;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-
-    width: 23px;
-    height: 4px;
-    background-color: var(--color-mobile-humburger-normal);
+  &:active {
+    opacity: 0.3;
   }
 
-  &:hover::before {
-    background-color: var(--color-mobile-humburger-hover);
-    box-shadow: 0 9px 0 0 var(--color-mobile-humburger-hover);
+  &--open {
+    background-image: url("../img/menu-cross.svg");
   }
 
-  &:hover::after {
-    background-color: var(--color-mobile-humburger-hover);
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 8px;
+  //   left: 8px;
 
-  &:active::before {
-    background-color: var(--color-mobile-humburger-down);
-    box-shadow: 0 9px 0 0 var(--color-mobile-humburger-down);
-  }
+  //   width: 23px;
+  //   height: 4px;
+  //   background-color: var(--color-mobile-humburger-normal);
+  //   box-shadow: 0 9px 0 0 var(--color-mobile-humburger-normal);
+  // }
 
-  &:active::after {
-    background-color: var(--color-mobile-humburger-down);
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 8px;
+  //   left: 8px;
 
-  &--open::before {
-    width: 27px;
-    background-color: var(--color-mobile-x-normal);
-    box-shadow: none;
-    transform: translate(-2px, 9px) rotate(45deg);
-  }
+  //   width: 23px;
+  //   height: 4px;
+  //   background-color: var(--color-mobile-humburger-normal);
+  // }
 
-  &--open::after {
-    width: 27px;
-    background-color: var(--color-mobile-x-normal);
-    transform: translate(-2px, -9px) rotate(-45deg);
-  }
+  // &:hover::before {
+  //   background-color: var(--color-mobile-humburger-hover);
+  //   box-shadow: 0 9px 0 0 var(--color-mobile-humburger-hover);
+  // }
 
-  &--open:hover::before,
-  &--open:hover::after {
-    background-color: var(--color-mobile-x-hover);
-  }
+  // &:hover::after {
+  //   background-color: var(--color-mobile-humburger-hover);
+  // }
 
-  &--open:active::before,
-  &--open:active::after {
-    background-color: var(--color-mobile-x-down);
-  }
+  // &:active::before {
+  //   background-color: var(--color-mobile-humburger-down);
+  //   box-shadow: 0 9px 0 0 var(--color-mobile-humburger-down);
+  // }
+
+  // &:active::after {
+  //   background-color: var(--color-mobile-humburger-down);
+  // }
+
+  // &--open::before {
+  //   width: 27px;
+  //   background-color: var(--color-mobile-x-normal);
+  //   box-shadow: none;
+  //   transform: translate(-2px, 9px) rotate(45deg);
+  // }
+
+  // &--open::after {
+  //   width: 27px;
+  //   background-color: var(--color-mobile-x-normal);
+  //   transform: translate(-2px, -9px) rotate(-45deg);
+  // }
+
+  // &--open:hover::before,
+  // &--open:hover::after {
+  //   background-color: var(--color-mobile-x-hover);
+  // }
+
+  // &--open:active::before,
+  // &--open:active::after {
+  //   background-color: var(--color-mobile-x-down);
+  // }
 }
 
 .main-nav-toggle--nojs {

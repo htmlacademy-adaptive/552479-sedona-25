@@ -34,6 +34,11 @@
   border: 0;
   outline: 0;
 
+  @media (min-width: 1200px) {
+    width: 430px;
+    max-width: 430px;
+  }
+
   &::placeholder {
     color: var(--color-input-placeholder);
   }
@@ -50,8 +55,11 @@
     outline-offset: -4px;
   }
 
-  @media (min-width: 1200px) {
-    max-width: 430px;
+  &--phone,
+  &--email {
+    @media (min-width: 1200px) {
+      max-width: 402px;
+    }
   }
 
   &--phone {

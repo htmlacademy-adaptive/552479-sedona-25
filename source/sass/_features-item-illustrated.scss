@@ -90,6 +90,10 @@
     height: 256px;
   }
 
+  @media (min-width: 1200px) {
+    object-position: center center;
+  }
+
   &--positioned {
     @media (min-width: 1200px) {
       object-position: center -15px;

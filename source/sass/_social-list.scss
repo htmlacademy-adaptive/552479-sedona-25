@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
 
+  color: var(--color-button-text-normal-hover-disabled);
   background-color: var(--color-button-background-normal);
 
   &:hover {
@@ -22,9 +23,6 @@
 
   &:active {
     background-color: var(--color-button-background-active);
+    color: var(--color-button-text-active);
   }
-}
-
-.social-list__link:active svg {
-  opacity: 0.3;
 }
