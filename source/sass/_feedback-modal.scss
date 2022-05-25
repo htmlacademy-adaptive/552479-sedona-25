@@ -1,7 +1,42 @@
 .feedback-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-modal--error {
+  display: none;
+}
+
+.feedback-modal--ok {
+  display: none;
+}
+
+.feedback-modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 400;
+
+  background-color: var(--color-modal-overlay);
+}
+
+.feedback-modal__content {
+  z-index: 500;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   text-align: center;
+
+  background-color: var(--color-primary);
 }
