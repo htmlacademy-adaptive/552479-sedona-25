@@ -69,12 +69,15 @@
                       <p class="photo__author">Автор фото: Борис</p>
                     </div>
                     <div class="photo__likes">
-                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-button like-button"></span>
                       <span class="photo__like-stats">1350</span>
                     </div>
                   </div>
                   <div class="photo__image-container">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/photo-1-mobile.webp 1x, ./img/photo-1-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                       <img class="photo__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Уходящая дорога на фоне гор на закате или рассвете">
@@ -93,12 +96,15 @@
                       <p class="photo__author">Автор фото: Сергей</p>
                     </div>
                     <div class="photo__likes">
-                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-button like-button"></span>
                       <span class="photo__like-stats">143</span>
                     </div>
                   </div>
                   <div class="photo__image-container">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/photo-2-mobile.webp 1x, ./img/photo-2-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                       <img class="photo__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Цветущий суккулент на фоне красных скал">
@@ -117,12 +123,15 @@
                       <p class="photo__author">Автор фото: Петр</p>
                     </div>
                     <div class="photo__likes">
-                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-button like-button"></span>
                       <span class="photo__like-stats">96</span>
                     </div>
                   </div>
                   <div class="photo__image-container">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/photo-3-mobile.webp 1x, ./img/photo-3-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                       <img class="photo__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога-серпантин в поросших лесом горах">
@@ -141,12 +150,15 @@
                       <p class="photo__author">Автор фото: Антон</p>
                     </div>
                     <div class="photo__likes">
-                      <button class="photo__like-button like-button" type="button"></button>
+                      <span class="photo__like-button like-button"></span>
                       <span class="photo__like-stats">254</span>
                     </div>
                   </div>
                   <div class="photo__image-container">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="./img/photo-4-mobile.webp 1x, ./img/photo-4-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
                       <img class="photo__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Скала-арка Мост Дьявола">
@@ -189,7 +201,7 @@
 
         <ul class="main-footer__inner main-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--vkontakte" href="##">
+            <a class="social-list__link social-list__link--vkontakte" href="#">
               <span class="visually-hidden">ВКонтакте</span>
               <svg width="24" height="24">
                 <use xlink:href="./img/sprite.svg#social-icon-vk"></use>
@@ -197,7 +209,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--telegram" href="##">
+            <a class="social-list__link social-list__link--telegram" href="#">
               <span class="visually-hidden">Телеграм</span>
               <svg width="24" height="24">
                 <use xlink:href="./img/sprite.svg#social-icon-tg"></use>
@@ -205,7 +217,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="##">
+            <a class="social-list__link social-list__link--youtube" href="#">
               <span class="visually-hidden">Youtube</span>
               <svg width="24" height="24">
                 <use xlink:href="./img/sprite.svg#social-icon-yt"></use>

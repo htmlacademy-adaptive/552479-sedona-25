@@ -49,7 +49,7 @@
   }
 }
 
-.features-item-extra-title {
+.features-item-extra__title {
   position: relative;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@
   }
 }
 
-.features-item-extra-title::before {
+.features-item-extra__title::before {
   content: "";
   position: absolute;
   width: 40px;
@@ -80,14 +80,14 @@
   }
 }
 
-.features-item-extra-title__house::before {
+.features-item-extra__title--house::before {
   background-image: url("../img/house.svg");
 }
 
-.features-item-extra-title__food::before {
+.features-item-extra__title--food::before {
   background-image: url("../img/burger.svg");
 }
 
-.features-item-extra-title__gift::before {
+.features-item-extra__title--gift::before {
   background-image: url("../img/present.svg");
 }
