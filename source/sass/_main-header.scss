@@ -15,7 +15,7 @@
   &::before,
   &::after {
     content: "";
-    width: 600px;
+    width: 601px;
     height: 57px;
     position: absolute;
     z-index: 1;
@@ -49,22 +49,6 @@
   // @media (min-width: 768px) {
   // }
 }
-
-.main-header__nav {
-  // grid-column: 1 / -1;
-  // grid-row: 1 / 2;
-}
-
-// .main-header__poster {
-//   grid-column: 1 / -1;
-//   grid-row: 2 / 3;
-// }
-
-// .main-header__logo,
-// .main-header__nav,
-// .main-header__poster {
-//   outline: 1px dashed #006400;
-// }
 
 .main-header__poster {
   width: 100%;
