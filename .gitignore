@@ -8,6 +8,7 @@
 *.sublime*
 bash.exe.stackdump
 build/
+source/img/pixel-glass/
 node_modules/
 npm-debug.*
 source/css/*.css
